@@ -1,0 +1,40 @@
+Consider modules to be the same as JavaScript libraries.
+A set of functions you want to include in your application.
+To include a module, use the require() function with the name of the module
+req is an object containing information about the HTTP request that raised the event. In response to req, you use res to send back the desired HTTP response.
+Built on top of the Node.js built-in http module, Express helps us set up routing and handle the request/response cycle.
+.listen(5000) --> the server on the object listens on the mentioned 5000 port
+
+GET and POST are the two common HTTP Requests used for building REST APIs. Both of these calls are meant for some special purpose. As per the documentation GET requests are meant to fetch data from specified resources and POST requests are meant to submit data to a specified resource.
+
+The Get method is used to handle the get requests in Express. It takes two arguments, the first one is the route(i.e. path), and the second is the callback. Inside the callback, we send the response when a user requests that path.
+
+The POST request is handled in Express using the Post express method. This is used when there is a requirement of fetching data from the client such as form data. The data sent through the POST request is stored in the request object
+
+Express requires an additional middleware module to extract incoming data of a POST request. This middleware is called the “body-parser”
+npm install body parser
+
+you cant send the post request from browser...so we use postman
+Postman is an API(application programming interface) development tool which helps to build, test and modify APIs. 
+It has the ability to make various types of HTTP requests(GET, POST, PUT, PATCH), saving environments for later use, converting the API to code for various languages(like JavaScript, Python).
+create a file with content from response 
+run the file and send the repsonse
+.join normalizes the resulting path by joining all paths
+
+The fs module in Node.js is a basic and useful module that allows programmatic manipulation of files on the local machinez
+
+npm install --save uuid  --->to install the unique id generator 
+
+The string literal wrapped in backticks ` is also named template string. This is the literal that supports the string interpolation.
+
+async makes a function return a Promise
+
+await makes a function wait for a Promise
+
+The keyword async before a function makes the function return a promise:
+
+
+the await keyword can only be used inside an async function.
+
+The await keyword makes the function pause the execution and wait for a resolved promise before it continues:
+The fs.existsSync() method is used to synchronously check if a file already exists in the given path or not. It returns a boolean value which indicates the presence of a file.
